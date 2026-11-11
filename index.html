@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Information Portal</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><u>Masinde Muliro University Of Science And Technology</u></h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#registration">Student Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About The Portal</h2>
+        <p>
+            This Portal serves as a centralised platform for students to access academic
+            and stay updated with official university updates.
+        </p>
+
+        <h3>Academic Programmes</h3>
+        <ul>
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Bachelor of Science in Medicine</li>
+            <li>Bachelor of Science in Actuarial Science</li>
+            <li>Bachelor of Science in Data Science</li>
+        </ul>
+
+        <h3>Student Directory</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Registration Number</th>
+                    <th>Programme</th>
+                    <th>Year Of Study</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>STD_001</td>
+                    <td>Ian Odhiambo</td>
+                    <td>CS/0001/2023</td>
+                    <td>BSc Computer Science</td>
+                    <td>Year 2</td>
+                </tr>
+                <tr>
+                    <td>STD_002</td>
+                    <td>Eugene Omondi</td>
+                    <td>ACT/0042/2023</td>
+                    <td>BSc Actuarial Science</td>
+                    <td>Year 2</td>
+                </tr>
+                <tr>
+                    <td>STD_003</td>
+                    <td>Christopher Mwendwa</td>
+                    <td>CS/0089/2024</td>
+                    <td>BSc Computer Science</td>
+                    <td>Year 1</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+    <aside class="sidebar-area">
+
+        <section id="registration">
+            <h2>Student Registration</h2>
+            <form id="studentForm" action="#" method="post" novalidate>
+
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="reg_num">Registration Number:</label>
+                    <input type="text" id="reg_num" name="reg_num">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="Male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="programme">Academic Programme:</label>
+                    <select id="programme" name="programme">
+                        <option value="">-- Select Programme --</option>
+                        <option value="BSc Computer Science">BSc Computer Science</option>
+                        <option value="BSc Business IT">BSc Business Information Technology</option>
+                        <option value="BSc Software Engineering">BSc Software Engineering</option>
+                        <option value="BSc Data Science">BSc Data Science and Analytics</option>
+                    </select>
+                </div>
+
+
+                <div class="button-group">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset Form">
+                </div>
+            </form>
+
+
+            <div id="outputContainer"></div>
+        </section>
+
+       
+        
+    </aside>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
