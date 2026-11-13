@@ -1,14 +1,14 @@
 
 const studentName = "Ian Odhiambo";
-const regNumber = "CS/0012/2023";
+const regNumber = "COM/B/01-00144/2025";
 const academicProgramme = "Bachelor of Science in Computer Science";
 
-console.log("=== Question 5(a) Student Variables ===");
+console.log(" ");
 console.log("Student Name:", studentName);
 console.log("Registration Number:", regNumber);
 console.log("Academic Programme:", academicProgramme);
 
-// (b) Function calculateGrade()
+// calculateGrade 
 function calculateGrade(score) {
     if (score >= 70 && score <= 100) {
         return 'A';
